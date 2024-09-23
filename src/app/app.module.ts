@@ -10,6 +10,7 @@ import { AcercaDeNosotrosComponent } from './components/acerca-de-nosotros/acerc
 import { TestimoniosComponent } from './components/testimonios/testimonios.component';
 import { GestionDeServiciosComponent } from './components/gestion-de-servicios/gestion-de-servicios.component';
 import { ProductosComponent } from './components/productos/productos.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProductosComponent } from './components/productos/productos.component';
     AcercaDeNosotrosComponent,
     TestimoniosComponent,
     GestionDeServiciosComponent,
-    ProductosComponent
+    ProductosComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
