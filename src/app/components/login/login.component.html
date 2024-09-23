@@ -1,1 +1,44 @@
-<p>login works!</p>
+<div class="login-main">
+<main>
+  <div class="contenedor__todo">
+    <div class="caja__trasera">
+
+      <div class="caja__trasera-login" id="caja__trasera-login">
+        <h3>¿YA TIENES UNA CUENTA?</h3>
+        <p>Inicia session para entrar en la aplicacion</p>
+        <button id="btn__iniciar-sesion" (click)="login()">Iniciar Sesion</button>
+      </div>
+      <div class="caja__trasera-register" id="caja__trasera-register">
+        <h3>¿Aun no tienes una cuenta?</h3>
+        <p>Registrarse pra iniciar sesion</p>
+        <button id="btn__registrarse" (click)="sigUp()">Registrarse</button>
+      </div>
+    </div>
+
+    <div class="contenedor__login-registar" id="contenedor__login-registar">
+
+      <form action="" class="formulario__login" id="formulario__login">
+        <h2>iniciar sesion</h2>
+        <input type="text" placeholder="correo electronico">
+        <input type="password" aria-placeholder="contraseña">
+        <br/> <br/>
+        <a href="../html/condiciones-salud.html" target="_blank">Entrar</a>
+      </form>
+
+
+
+      <form class="formulario_register" id="formulario_register">
+        <h2>Registrarse</h2>
+        <input type="text" placeholder="Nombre Completo">
+        <input type="text" placeholder="Correo Electronico">
+        <input type="text" placeholder="Usuario">
+        <input type="password" placeholder="Contraseña">
+        <a >Registrarse</a>
+      </form>
+
+    </div>
+
+  </div>
+</main>
+</div>
+
