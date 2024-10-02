@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
+import {ServerService} from "../services/server.service";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-login',
@@ -6,6 +9,16 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+    form!: FormGroup;
+
+  constructor(private router: Router,
+              private serverService: ServerService,
+              private formBuilder: FormBuilder) {
+    this.form = this.formBuilder.group({
+        email: ['', Validators.required],
+        password: ['', Validators.required],
+    })
+  }
 
   sigUp() {
     console.log("signup")
@@ -42,5 +55,20 @@ export class LoginComponent {
       caja_trasera_login!.style.display="none";
 
     }
+  }
+
+  loginUser() {
+    this.serverService.getUser(this.form.get('email')?.value,
+        this.form.get('password')?.value)
+        .subscribe({
+            next: value => {
+                console.log(value)
+                localStorage.setItem("userId", value);
+            },error: () => {
+              alert("User Not Found!")
+            }
+        })
+
+
   }
 }

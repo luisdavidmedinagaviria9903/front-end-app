@@ -17,12 +17,13 @@
 
     <div class="contenedor__login-registar" id="contenedor__login-registar">
 
-      <form action="" class="formulario__login" id="formulario__login">
+      <form  class="formulario__login" id="formulario__login" [formGroup]="form">
         <h2>iniciar sesion</h2>
-        <input type="text" placeholder="correo electronico">
-        <input type="password" aria-placeholder="contraseña">
+
+        <input type="text" placeholder="correo electronico" formControlName="email" matInput>
+        <input type="password" aria-placeholder="contraseña" formControlName="password" matInput>
         <br/> <br/>
-        <a href="../html/condiciones-salud.html" target="_blank">Entrar</a>
+        <a target="_blank" (click)="loginUser()">Entrar</a>
       </form>
 
 

@@ -11,6 +11,10 @@ import { TestimoniosComponent } from './components/testimonios/testimonios.compo
 import { GestionDeServiciosComponent } from './components/gestion-de-servicios/gestion-de-servicios.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { HomeComponent } from './components/home/home.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatInput, MatInputModule} from "@angular/material/input";
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,10 +30,14 @@ import { HomeComponent } from './components/home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    MatInput,
+    HttpClientModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

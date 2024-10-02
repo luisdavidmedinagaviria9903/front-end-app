@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "152",
+      "firstName": "Luis",
+      "LastName": "Medina",
+      "password": "lda*.*12345",
+      "email": "ldamedina@poligran.edu.co"
+    },
+    {
+      "id": "153",
+      "firstName": "Test1",
+      "LastName": "Test1",
+      "password": "efdsf87f87dsf",
+      "email": "test1@poligran.edu.co"
+    },
+    {
+      "id": "154",
+      "firstName": "Test2",
+      "LastName": "Test2",
+      "password": "fdsf32rfds",
+      "email": "test2@poligran.edu.co"
+    },
+    {
+      "id": "155",
+      "firstName": "Test3",
+      "LastName": "Test3",
+      "password": "dfsd9234",
+      "email": "test3@poligran.edu.co"
+    }
+  ]
+}
