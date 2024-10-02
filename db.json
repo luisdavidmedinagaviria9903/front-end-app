@@ -28,5 +28,77 @@
       "password": "dfsd9234",
       "email": "test3@poligran.edu.co"
     }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Samsung tab s1",
+      "specifications": "",
+      "price": 1000000,
+      "image": "https://github.com/luisdavidmedinagaviria9903/images-storage/224412880-1_1800x1800.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Samsung tab s1",
+      "specifications": "",
+      "price": 1000000,
+      "image": ""
+    },
+    {
+      "id": 3,
+      "title": "Samsung tab s1",
+      "specifications": "",
+      "price": 1000000,
+      "image": ""
+    },
+    {
+      "id": 4,
+      "title": "Samsung tab s1",
+      "specifications": "",
+      "price": 1000000,
+      "image": ""
+    },
+    {
+      "id": 5,
+      "title": "Samsung tab s1",
+      "specifications": "",
+      "price": 1000000,
+      "image": ""
+    },
+    {
+      "id": 6,
+      "title": "Samsung tab s1",
+      "specifications": "",
+      "price": 1000000,
+      "image": ""
+    },
+    {
+      "id": 7,
+      "title": "Samsung tab s1",
+      "specifications": "",
+      "price": 1000000,
+      "image": ""
+    },
+    {
+      "id": 8,
+      "title": "Samsung tab s1",
+      "specifications": "",
+      "price": 1000000,
+      "image": ""
+    },
+    {
+      "id": 9,
+      "title": "Samsung tab s1",
+      "specifications": "",
+      "price": 1000000,
+      "image": ""
+    },
+    {
+      "id": 10,
+      "title": "Samsung tab s1",
+      "specifications": "",
+      "price": 1000000,
+      "image": ""
+    }
   ]
 }
