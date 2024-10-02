@@ -32,73 +32,73 @@
   "products": [
     {
       "id": 1,
-      "title": "Samsung tab s1",
-      "specifications": "",
-      "price": 1000000,
+      "title": "Product 1",
+      "specifications": "Specificaciones 1",
+      "price": 100.52,
       "image": "https://github.com/luisdavidmedinagaviria9903/images-storage/224412880-1_1800x1800.jpg"
     },
     {
       "id": 2,
-      "title": "Samsung tab s1",
-      "specifications": "",
-      "price": 1000000,
-      "image": ""
+      "title": "Product 2",
+      "specifications": "Specificaciones 2",
+      "price": 15285.6,
+      "image": "https://github.com/luisdavidmedinagaviria9903/images-storage/799573459-1 (2).png"
     },
     {
       "id": 3,
-      "title": "Samsung tab s1",
-      "specifications": "",
-      "price": 1000000,
-      "image": ""
+      "title": "Product 3",
+      "specifications": "Specificaciones 3",
+      "price": 1578.0,
+      "image": "https://github.com/luisdavidmedinagaviria9903/images-storage/82HU00JUUS-0_1800x1800-Photoroom.png-Photoroom.png"
     },
     {
       "id": 4,
-      "title": "Samsung tab s1",
-      "specifications": "",
-      "price": 1000000,
-      "image": ""
+      "title": "Product 3",
+      "specifications": "Specificaciones 4",
+      "price": 58741.25,
+      "image": "https://github.com/luisdavidmedinagaviria9903/images-storage/799573459-1 (2).png"
     },
     {
       "id": 5,
-      "title": "Samsung tab s1",
-      "specifications": "",
-      "price": 1000000,
-      "image": ""
+      "title": "Product 4",
+      "specifications": "Specificaciones 5",
+      "price": 56987.6,
+      "image": "https://github.com/luisdavidmedinagaviria9903/images-storage/799573459-1 (2).png"
     },
     {
       "id": 6,
-      "title": "Samsung tab s1",
+      "title": "Specificaciones 6",
       "specifications": "",
-      "price": 1000000,
-      "image": ""
+      "price": 89547.9,
+      "image": "https://github.com/luisdavidmedinagaviria9903/images-storage/799573459-1 (2).png"
     },
     {
       "id": 7,
-      "title": "Samsung tab s1",
+      "title": "Specificaciones 7",
       "specifications": "",
-      "price": 1000000,
-      "image": ""
+      "price": 89625.6,
+      "image": "https://github.com/luisdavidmedinagaviria9903/images-storage/799573459-1 (2).png"
     },
     {
       "id": 8,
-      "title": "Samsung tab s1",
+      "title": "Specificaciones 8",
       "specifications": "",
-      "price": 1000000,
-      "image": ""
+      "price": 87596.3,
+      "image": "https://github.com/luisdavidmedinagaviria9903/images-storage/799573459-1 (2).png"
     },
     {
       "id": 9,
-      "title": "Samsung tab s1",
+      "title": "Specificaciones 9",
       "specifications": "",
-      "price": 1000000,
-      "image": ""
+      "price": 32156.0,
+      "image": "https://github.com/luisdavidmedinagaviria9903/images-storage/799573459-1 (2).png"
     },
     {
       "id": 10,
-      "title": "Samsung tab s1",
+      "title": "Specificaciones 10",
       "specifications": "",
-      "price": 1000000,
-      "image": ""
+      "price": 1000000.0,
+      "image": "https://github.com/luisdavidmedinagaviria9903/images-storage/799573459-1 (2).png"
     }
   ]
 }
