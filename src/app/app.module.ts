@@ -15,6 +15,9 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {MatInput, MatInputModule} from "@angular/material/input";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HttpClientModule } from '@angular/common/http';
+import {MatMenu, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
+import {MatIcon} from "@angular/material/icon";
+import {MatIconButton} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -33,7 +36,12 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     ReactiveFormsModule,
     MatInput,
-    HttpClientModule
+    HttpClientModule,
+    MatMenuTrigger,
+    MatMenu,
+    MatIcon,
+    MatMenuItem,
+    MatIconButton
   ],
   providers: [
     provideClientHydration(),

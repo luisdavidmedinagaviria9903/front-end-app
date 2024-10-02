@@ -51,3 +51,19 @@ h6{
   width: 360px;
   height: 250px;
 }
+.header-user{
+  margin: 1.5rem;
+  display: inline-flex;
+
+  & span {
+    margin:  .5rem 0;
+    font-size: 1.1rem;
+    font-family: PoppingLight, serif;
+    color: black;
+  }
+  & button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

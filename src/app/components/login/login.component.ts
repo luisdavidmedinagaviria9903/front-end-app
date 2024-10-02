@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {Router} from "@angular/router";
 import {ServerService} from "../services/server.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {showErrorPopUp, showSuccessPopUp, TITLE_ERROR, TITLE_SUCCESS} from "../utilities/alert";
 
 @Component({
   selector: 'app-login',
@@ -10,6 +11,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 })
 export class LoginComponent {
     form!: FormGroup;
+    signupForm!: FormGroup;
 
   constructor(private router: Router,
               private serverService: ServerService,
@@ -17,6 +19,11 @@ export class LoginComponent {
     this.form = this.formBuilder.group({
         email: ['', Validators.required],
         password: ['', Validators.required],
+    })
+    this.signupForm = this.formBuilder.group({
+      email: ['', Validators.required],
+      password: ['', Validators.required],
+      firstName: ['', Validators.required]
     })
   }
 
@@ -62,13 +69,46 @@ export class LoginComponent {
         this.form.get('password')?.value)
         .subscribe({
             next: value => {
-                console.log(value)
-                localStorage.setItem("userId", value);
+              if (value && value.length > 0){
+                showSuccessPopUp(TITLE_SUCCESS,'Login exitoso!')
+                    .then(() => this.router.navigate(['home']))
+                localStorage.setItem("user", JSON.stringify(value.at(0)));
+              }else {
+                showErrorPopUp(TITLE_ERROR,'Usuario No Encontrado!');
+              }
+
+
             },error: () => {
-              alert("User Not Found!")
+              alert("Usuario No Encontrado!")
             }
         })
 
 
   }
+
+  signUpUser() {
+    let user : User = {
+      id:Math.floor(Math.random() * 1000000),
+      firstName: this.signupForm.get('firstName')?.value,
+      LastName: "",
+      email: this.signupForm.get('email')?.value,
+      password:  this.signupForm.get('password')?.value,
+    }
+    this.serverService.saveUser(user).subscribe({
+      next: value => {
+        localStorage.setItem("user", JSON.stringify(value));
+        showSuccessPopUp(TITLE_SUCCESS,'Usuario registrado correctamente!')
+            .then(() => {
+              this.router.navigate(['home'])
+        })
+      }
+    })
+  }
+}
+export interface User{
+  id: number;
+  firstName: string;
+  LastName: string;
+  password:string;
+  email:string;
 }

@@ -19,23 +19,24 @@
 
       <form  class="formulario__login" id="formulario__login" [formGroup]="form">
         <h2>iniciar sesion</h2>
-
         <input type="text" placeholder="correo electronico" formControlName="email" matInput>
         <input type="password" aria-placeholder="contraseña" formControlName="password" matInput>
         <br/> <br/>
-        <a target="_blank" (click)="loginUser()">Entrar</a>
+        <a  (click)="loginUser()">Entrar</a>
       </form>
 
 
 
-      <form class="formulario_register" id="formulario_register">
+      <form  class="formulario_register" id="formulario_register" [formGroup]="signupForm">
         <h2>Registrarse</h2>
-        <input type="text" placeholder="Nombre Completo">
-        <input type="text" placeholder="Correo Electronico">
+        <input type="text" placeholder="Nombre Completo" formControlName="firstName" matInput>
+        <input type="text" placeholder="Correo Electronico" formControlName="email" matInput>
         <input type="text" placeholder="Usuario">
-        <input type="password" placeholder="Contraseña">
-        <a >Registrarse</a>
+        <input type="password" placeholder="Contraseña" formControlName="password" matInput>
+        <a (click)="signUpUser()">Registrarse</a>
+
       </form>
+      <pre>{{form.value | json}}</pre>
 
     </div>
 
