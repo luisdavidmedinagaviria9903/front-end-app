@@ -16,4 +16,8 @@ export class ServerService {
   saveUser(params: any):Observable<any>{
     return this.http.post<any>(this.url + 'users', params);
   }
+  getProducts():Observable<any>{
+    return this.http.get<any>(this.url + 'products');
+  }
+
 }

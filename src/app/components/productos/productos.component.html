@@ -17,7 +17,14 @@
   </div>
   <article>
     <button>&#9664;</button>
-    <div class="producto">
+    <div *ngFor="let product of products" class="producto">
+      <h3>{{product.title}}</h3>
+      <p>{{product.specifications}}</p>
+      <p>COP {{product.price}}</p>
+      <img style="width: 200px; height: 170px;" [srcset]="product.image"  alt="producto">
+    </div>
+
+    <!--div class="producto">
       <h3>Computador Portátil LENOVO IdeaPad Slim 5 14" Pulgadas 14IAH8"</h3>
       <p>Intel Core i5 - RAM 16GB - Disco SSD 512GB - Gris</p>
       <p>COP 2,299,000</p>
@@ -40,7 +47,7 @@
       <p>Intel Core i5 - RAM 8GB - Disco SSD 512 GB - Negro</p>
       <p>COP 2,299,000</p>
       <img style="width: 200px; height: 150px;" src="assets/producto4.jpg" alt="producto4">
-    </div>
+    </div-->
     <button>&#9654;</button>
   </article>
 
