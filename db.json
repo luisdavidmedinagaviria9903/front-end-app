@@ -100,5 +100,31 @@
       "price": 1000000.0,
       "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/799573459-1 (2).png"
     }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "description": "Mantenimiento portatil HP",
+      "state": "En proceso",
+      "cost": 150.000
+    },
+    {
+      "id": 2,
+      "description": "Reparacion Mac Book",
+      "state": "Pendiente",
+      "cost": 500.000
+    },
+    {
+      "id": 3,
+      "description": "Instalacion Windows 11",
+      "state": "Pendiente",
+      "cost": 50.000
+    },
+    {
+      "id": 4,
+      "description": "Reparacion Samsung Galaxy S23",
+      "state": "Terminado",
+      "cost": 300.000
+    }
   ]
 }
