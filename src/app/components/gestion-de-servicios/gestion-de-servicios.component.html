@@ -7,6 +7,7 @@
   </header>
   <article class="tabla">
     <table>
+      <caption></caption>
       <thead>
       <tr>
         <th>Servicio ID</th>
@@ -17,44 +18,11 @@
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <td>A12345</td>
-        <td>Reparacion Mac Book</td>
-        <td>Pendiente</td>
-        <td>$ 500.000</td>
-        <td>
-          <img style="width: 30px; height: 30px; margin-right: 20px; margin-left: 20px" src="assets/cancelar.png" alt="">
-          <img style="width: 30px; height: 30px; margin-right: 20px; margin-left: 20px" src="assets/lapiz.png" alt="">
-          <img style="width: 30px; height: 30px; margin-right: 20px; margin-left: 20px" src="assets/papelera.png" alt="">
-        </td>
-      </tr>
-      <tr>
-        <td>B12345</td>
-        <td>Mantenimiento portatil HP</td>
-        <td>En proceso</td>
-        <td>$ 150.000</td>
-        <td>
-          <img style="width: 30px; height: 30px; margin-right: 20px; margin-left: 20px" src="assets/cancelar.png" alt="">
-          <img style="width: 30px; height: 30px; margin-right: 20px; margin-left: 20px" src="assets/lapiz.png" alt="">
-          <img style="width: 30px; height: 30px; margin-right: 20px; margin-left: 20px" src="assets/papelera.png" alt="">
-        </td>
-      </tr>
-      <tr>
-        <td>C12345</td>
-        <td>Instalacion Windows 11</td>
-        <td>Pendiente</td>
-        <td>$ 50.000</td>
-        <td>
-          <img style="width: 30px; height: 30px; margin-right: 20px; margin-left: 20px" src="assets/cancelar.png" alt="">
-          <img style="width: 30px; height: 30px; margin-right: 20px; margin-left: 20px" src="assets/lapiz.png" alt="">
-          <img style="width: 30px; height: 30px; margin-right: 20px; margin-left: 20px" src="assets/papelera.png" alt="">
-        </td>
-      </tr>
-      <tr>
-        <td>D12345</td>
-        <td>Reparacion Samsung Galaxy S23</td>
-        <td>Terminado</td>
-        <td>$ 300.000</td>
+      <tr *ngFor="let service of services">
+        <td>{{service.id}}</td>
+        <td>{{service.description}}</td>
+        <td>{{service.state}}</td>
+        <td>${{service.cost}}</td>
         <td>
           <img style="width: 30px; height: 30px; margin-right: 20px; margin-left: 20px" src="assets/cancelar.png" alt="">
           <img style="width: 30px; height: 30px; margin-right: 20px; margin-left: 20px" src="assets/lapiz.png" alt="">

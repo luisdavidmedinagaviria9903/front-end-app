@@ -32,73 +32,87 @@
   "products": [
     {
       "id": 1,
-      "title": "Product 1",
-      "specifications": "Specificaciones 1",
+      "title": "Apple MACBOOK PRO (2021)",
+      "specifications": "16\", M1 Pro, 16GB, 1TB SSD, 3456 x 2234, MacOs, Space Gray",
       "price": 100.52,
-      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/224412880-1_1800x1800.jpg"
+      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/macbook.jpeg"
     },
     {
       "id": 2,
-      "title": "Product 2",
-      "specifications": "Specificaciones 2",
+      "title": "Sony PLAYSTATION 4",
+      "specifications": "1TB, Black",
       "price": 15285.6,
-      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/799573459-1 (2).png"
+      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/playstation4.jpeg"
     },
     {
       "id": 3,
-      "title": "Product 3",
-      "specifications": "Specificaciones 3",
+      "title": "Lenovo TAB M8",
+      "specifications": "8\" HD, MediaTek Helio P22T , 3GB, Wifi, 32GB eMC, Android 11, GRAY",
       "price": 1578.0,
-      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/82HU00JUUS-0_1800x1800-Photoroom.png-Photoroom.png"
+      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/lenovo.jpeg"
     },
     {
       "id": 4,
-      "title": "Product 3",
-      "specifications": "Specificaciones 4",
+      "title": "SAMSUNG S60A",
+      "specifications": "32.0, 1 year, Black",
       "price": 58741.25,
-      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/799573459-1 (2).png"
+      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/monitor samsung.jpeg"
     },
     {
       "id": 5,
-      "title": "Product 4",
-      "specifications": "Specificaciones 5",
+      "title": "Jbl JBLT115TWSMIT",
+      "specifications": "Bluetooth, Mint",
       "price": 56987.6,
-      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/799573459-1 (2).png"
+      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/jbl.jpeg"
     },
     {
       "id": 6,
-      "title": "Specificaciones 6",
-      "specifications": "",
+      "title": "Epson L3250",
+      "specifications": "Ecotank Multifunctional printer",
       "price": 89547.9,
-      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/799573459-1 (2).png"
+      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/printer.jpeg"
     },
     {
       "id": 7,
-      "title": "Specificaciones 7",
-      "specifications": "",
+      "title": "QUEST 2 ADVANCE",
+      "specifications": "ALLINONE VIRTUAL REALITY HEADSET  256GB",
       "price": 89625.6,
-      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/799573459-1 (2).png"
+      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/quest.jpeg"
     },
     {
       "id": 8,
-      "title": "Specificaciones 8",
-      "specifications": "",
+      "title": "Echo Dot",
+      "specifications": "4th Gen - Charcoal International Version",
       "price": 87596.3,
-      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/799573459-1 (2).png"
+      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/echo_dot.jpeg"
     },
     {
       "id": 9,
-      "title": "Specificaciones 9",
-      "specifications": "",
+      "title": "iPad Air 2022",
+      "specifications": "10.9\",Wi-Fi,64GB,Purple,5th Gen",
       "price": 32156.0,
-      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/799573459-1 (2).png"
+      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/ipad_air.jpeg"
     },
     {
       "id": 10,
-      "title": "Specificaciones 10",
-      "specifications": "",
-      "price": 1000000.0,
-      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/799573459-1 (2).png"
+      "title": "Watch Series 8 ",
+      "specifications": "GPS 41mm Midnight Aluminum Case with Midnight Sport Band - S/M - Midnight",
+      "price": 19000.0,
+      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/watch.jpeg"
+    },
+    {
+      "id": 11,
+      "title": "Beats SOLO3 WIRELESS HEADPHONES ",
+      "specifications": "Bluetooth, BLACK",
+      "price": 20000.0,
+      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/beats.jpeg"
+    },
+    {
+      "id": 12,
+      "title": "Amazon KINDLE PAPERWHITE 5  ",
+      "specifications": "2021 16GB,B09TMF6742,  Black",
+      "price": 4000.0,
+      "image": "https://luisdavidmedinagaviria9903.github.io/images-storage/amazon.jpeg"
     }
   ],
   "services": [
@@ -125,6 +139,24 @@
       "description": "Reparacion Samsung Galaxy S23",
       "state": "Terminado",
       "cost": 300.000
+    },
+    {
+      "id": 5,
+      "description": "Reparacion Apple Watch",
+      "state": "Terminado",
+      "cost": 500.000
+    },
+    {
+      "id": 6,
+      "description": "Mantenimiento MacBook Pro ",
+      "state": "Pendiente",
+      "cost": 1000.000
+    },
+    {
+      "id": 7,
+      "description": "Mantenimiento Speaker JBL ",
+      "state": "Pendiente",
+      "cost": 1500.000
     }
   ]
 }

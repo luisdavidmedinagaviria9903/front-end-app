@@ -20,4 +20,8 @@ export class ServerService {
     return this.http.get<any>(this.url + 'products');
   }
 
+  getServices():Observable<any>{
+    return this.http.get<any>(this.url + 'services');
+  }
+
 }
