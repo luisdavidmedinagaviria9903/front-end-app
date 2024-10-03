@@ -12,12 +12,14 @@ import { GestionDeServiciosComponent } from './components/gestion-de-servicios/g
 import { ProductosComponent } from './components/productos/productos.component';
 import { HomeComponent } from './components/home/home.component';
 import {ReactiveFormsModule} from "@angular/forms";
-import {MatInput, MatInputModule} from "@angular/material/input";
+import {MatInput} from "@angular/material/input";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HttpClientModule } from '@angular/common/http';
 import {MatMenu, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
 import {MatIcon} from "@angular/material/icon";
 import {MatIconButton} from "@angular/material/button";
+import { HeaderComponent } from './components/header/header.component';
+import { UpdateServiceComponent } from './components/update-service/update-service.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import {MatIconButton} from "@angular/material/button";
     TestimoniosComponent,
     GestionDeServiciosComponent,
     ProductosComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    UpdateServiceComponent
   ],
   imports: [
     BrowserModule,

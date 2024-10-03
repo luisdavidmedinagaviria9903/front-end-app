@@ -1,15 +1,18 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {ServerService} from "../services/server.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {showErrorPopUp, showSuccessPopUp, TITLE_ERROR, TITLE_SUCCESS} from "../utilities/alert";
+
+import {User} from "../header/header.component";
+
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit{
     form!: FormGroup;
     signupForm!: FormGroup;
 
@@ -104,11 +107,14 @@ export class LoginComponent {
       }
     })
   }
+
+  ngOnInit(): void {
+    let user = localStorage.getItem('user');
+    console.log(user)
+    if (user){
+      showErrorPopUp(TITLE_ERROR,'Ya estas autenticado!')
+        .then(() => this.router.navigate(['home']))
+    }
+  }
 }
-export interface User{
-  id: number;
-  firstName: string;
-  LastName: string;
-  password:string;
-  email:string;
-}
+

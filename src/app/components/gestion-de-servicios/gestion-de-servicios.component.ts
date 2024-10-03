@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {ServerService} from "../services/server.service";
+import {showSuccessPopUp, TITLE_SUCCESS} from "../utilities/alert";
 
 @Component({
   selector: 'app-gestion-de-servicios',
@@ -14,6 +15,29 @@ export class GestionDeServiciosComponent implements OnInit{
 
   }
   ngOnInit(): void {
+    this.getServices();
+
+  }
+
+  turnService(service: Services) {
+    service.state = service.state == 'En espera' ? 'Pendiente' : 'En espera';
+    this.serverService.updateService(service)
+      .subscribe(() => {
+        showSuccessPopUp(TITLE_SUCCESS,'Servicio apagado correctamente!');
+        this.getServices()
+      })
+  }
+
+  deleteService(service: Services){
+    this.serverService.deleteService(service.id)
+      .subscribe(() => {
+        showSuccessPopUp(TITLE_SUCCESS,'Servicio eliminado correctamente!');
+        this.getServices()
+      })
+
+  }
+
+  private getServices(){
     this.serverService.getServices()
       .subscribe({
         next: value => {
@@ -23,7 +47,6 @@ export class GestionDeServiciosComponent implements OnInit{
         },error: () => {
         }
       })
-
   }
 }
 export interface Services{

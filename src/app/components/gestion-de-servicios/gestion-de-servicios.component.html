@@ -24,9 +24,18 @@
         <td>{{service.state}}</td>
         <td>${{service.cost}}</td>
         <td>
-          <img style="width: 30px; height: 30px; margin-right: 20px; margin-left: 20px" src="assets/cancelar.png" alt="">
-          <img style="width: 30px; height: 30px; margin-right: 20px; margin-left: 20px" src="assets/lapiz.png" alt="">
-          <img style="width: 30px; height: 30px; margin-right: 20px; margin-left: 20px" src="assets/papelera.png" alt="">
+          <button mat-icon-button (click)="turnService(service)">
+            <mat-icon [ngStyle]="{'color': service.state == 'En espera' ? 'gray' : 'green'}">
+              power_settings_new
+            </mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button (click)="deleteService(service)">
+            <mat-icon [ngStyle]="{'color':'red'}">delete</mat-icon>
+          </button>
+
         </td>
       </tr>
       </tbody>

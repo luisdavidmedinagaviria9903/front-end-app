@@ -1,0 +1,30 @@
+.navbar-brand{
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+.nav-link{
+  margin-left: 15px;
+  color: black ;
+
+
+}
+.nav-link:hover{
+  color: rgb(179, 107, 19);
+}
+
+.header-user{
+  margin: 1.5rem;
+  display: inline-flex;
+
+  & span {
+    margin:  .5rem 0;
+    font-size: 1.1rem;
+    font-family: PoppingLight, serif;
+    color: black;
+  }
+  & button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
